@@ -1,0 +1,10 @@
+.subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+    padding-left: 10px;
+    z-index: 2;
+    @include circle;
+    @include position_circle_title;
+}

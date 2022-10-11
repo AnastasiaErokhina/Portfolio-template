@@ -1,0 +1,30 @@
+.sidepanel {
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 392px;
+    left: -115px;
+    &> *:not(:last-child) {
+        margin-right: 15px;
+    }
+    &__text {
+        font-weight: 700;
+        font-size: 16px;
+        color: #000000;
+    }
+    &__divider {
+        width: 70px;
+        height: 2px;
+        background-color:#000000;
+    }
+    &__link {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__img {
+        width: 20px;
+        height: 20px;
+    }
+}
