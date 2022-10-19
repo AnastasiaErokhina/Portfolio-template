@@ -1,0 +1,62 @@
+.about-me {
+    padding-top: 116px;
+    &__photo {
+        width: 100%;
+    }
+    &__divider{
+        width: 60px;
+        height: 2px;
+        background-color: $main-color;
+        margin-top: 64px;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 14px;
+        color: #000000;
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        grid-template-rows: minmax(150px,auto);
+        gap: 40px 70px;
+    }
+    &__item {
+        &_img {
+        grid-row: 1/3;
+        }
+        &_knowledge {
+            display: grid;
+            grid-template-columns: repeat(2, 40px 1fr);
+            grid-template-rows: repeat(auto-fill, minmax(100px, auto));
+            gap: 40px 20px;
+        }
+        &_icons {
+            position: relative;
+            z-index: 2;
+            @include circle;
+            img {
+                position: absolute;
+                top: 15px;
+                right: 0;
+            }
+        }
+        &_r10 {
+            img {
+                right: 10px;
+            }
+        }
+    }
+}

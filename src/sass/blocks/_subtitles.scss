@@ -7,4 +7,7 @@
     z-index: 2;
     @include circle;
     @include position_circle_title;
+    &_mt6 {
+        margin-top: 6px;
+    }
 }
